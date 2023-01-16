@@ -91,19 +91,23 @@ img {
     flex-wrap: wrap;
     
 }
-
-.form-content input [type="text"],
-.form-content input [type="email"] {
+.form-content input[type="email"],
+.form-content input[type="text"] {
+    height: 0.8rem;
     font-family: aloevera;
+    font-size: 0.5rem;
+    margin: 1px;
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 100%;
-    padding: 7px;
-    font-size: 14px;
-    
-    
-
+ 
+}
+.form-content input[type="password"] {
+    height: 0.8rem;
+    margin: 1px;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
 }
 
 button {
@@ -114,5 +118,20 @@ button {
     border-style: none;
     
 }
+
+a:link, a:visited {
+    color: green;
+    text-decoration: none;
+    
+}
+button:hover {
+    color: green;
+}
+
+
+
+
+
+
 
 
