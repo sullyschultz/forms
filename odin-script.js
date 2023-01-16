@@ -1,15 +1,15 @@
-const password = document.getElementById("password");
-const confirmPassword = document.getElementById("confirm-password");
+
 const signUpBtn = document.querySelector(".signup-btn");
 console.log("hiya");
 
-signUpBtn.addEventListener('click', () => {
-    if (password.textContent !== confirmPassword.textContent) {
-        alert("Password doesn't match. Please try again.")
-        password.textContent="";
-        confirmPassword.textContent="";
-
+function validatePassword () {
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirm-password").value;
+    if (password != confirmPassword) {
+        alert("Password doesn't match. Please try again.");
+        return false;
     }
-});
+    return true;
+};
 
 
